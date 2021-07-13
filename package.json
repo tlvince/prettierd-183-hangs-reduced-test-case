@@ -1,0 +1,21 @@
+{
+  "name": "prettierd-183-hangs-reduced-test-case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf build && mkdir build && echo '\t\t\t\t<html></html>' > build/index.html",
+    "test": "prettierd < build/index.html build/output.html"
+  },
+  "keywords": [],
+  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com/)",
+  "license": "UNLICENSED",
+  "engines": {
+    "npm": "7.18.1",
+    "node": "16.4.2"
+  },
+  "dependencies": {
+    "@fsouza/prettierd": "0.14.2",
+    "prettier": "2.3.2"
+  }
+}
